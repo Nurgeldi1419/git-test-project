@@ -1,26 +1,36 @@
 import React from "react";
+import price from "../assets/Price.png";
 
 function Pricing() {
   return (
-    <section className="mx-auto px-auto mb-20 flex flex-col justify-center">
-      <div className="flex mx-auto justify-center flex-col w-1/2">
-        <h1 className="text-5xl text-sky-950 text-wrap mb-7 font-semibold text-center">
+    <section className="py-80 flex flex-col justify-center bg-cover bg-[url('/Rectangle.png')]">
+      <div className="flex mx-auto justify-center flex-col w-1/3">
+        <h1 className="text-4xl text-sky-950 text-wrap mb-7 font-semibold text-center">
           A price to suit everyone
         </h1>
-        <p className="text-indigo-800 text-pretty">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          quis, quibusdam optio suscipit odio illum. Dolorum, nemo perspiciatis!
-          A nisi debitis nesciunt est maxime harum ex minus iure sint fugiat?
+        <p className="text-[#6F7CB2] text-pretty text-base">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus
         </p>
       </div>
-      <h1 className="text-5xl text-sky-950 text-wrap mb-7 font-semibold text-center block">
-        40$
-      </h1>
-      <h2 className="text-2xl text-center">UI Design Kit</h2>
+      {/* <h1 className="text-6xl text-sky-950 text-wrap pt-10 pb-2 font-semibold text-center block">
+        $40
+      </h1> */}
+
+      {/* <div className="justify-items-center"></div> */}
+      <img
+        src={price}
+        alt=""
+        className="object-scale-down justify-items-center h-20"
+      />
+      <h6 className="text-base text-center pb-10 text-[#37447E]">
+        UI Design Kit
+      </h6>
       <div className="flex flex-col items-center justify-center">
-        <p>See. One price. Simple</p>
+        <p className="text-sm pb-2 text-[#5D6970]">See, One price. Simple</p>
         <div>
-          <button className="flex inline-flex items-center justify-center border-solid rounded text-white bg-sky-950  py-0.5 px-3 mt-4 md:mt-0 w-32">
+          <button className="flex items-center justify-center border-solid rounded text-white bg-sky-950 py-1 px-3 w-48 h-8">
             Purchase Now
           </button>
         </div>

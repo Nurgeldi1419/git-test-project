@@ -1,24 +1,21 @@
 import React from "react";
-import Navbar from "./components/Navbar";
 import Mainbox from "./components/Mainbox";
 import Section from "./components/Section";
-import Section1 from "./components/Section1";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
+import Intro from "./components/Intro";
+import Cta from "./components/Cta";
+import IntroCopy from "./components/IntroCopy";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
+// import IntroCopy from "./components/Section3";
 
 function App() {
   return (
     <section>
-      <Navbar />
       <Mainbox />
       <Section />
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
+      <Intro />
+      <IntroCopy />
+      <Cta />
       <Pricing />
       <Footer />
     </section>

@@ -1,18 +1,19 @@
 import React from "react";
-import img from "../image/Landie.png";
+import logo from "../assets/Landie.png";
 
 const Footer = () => {
   return (
-    <section className="flex flex-col mb-20 justify-around mx-32">
+    <section className="flex flex-col pb-20 justify-around px-32 bg-[length:2546px_938px] bg-[url('/Rectangle_footer.png')]">
       <div className="flex justify-between items-center mb-20 py-5">
         <h6 className="">@2023 Your company</h6>
         <div className="">
-          <img src={img} alt="fff" />
+          <img src={logo} alt="fff" />
         </div>
-        <button className="flex inline-flex items-center justify-center border-solid rounded py-2 px-4 text-white bg-sky-950 ">
+        <button className="flex items-center justify-center border-solid rounded py-2 px-4 text-white bg-sky-950 w-[109px] h--[26px] text-xs">
           Purchase now
         </button>
       </div>
+      <hr className="h-px my-8 bg-gray-300 border-0 dark:bg-gray-300" />
       <div className="flex justify-between py-5">
         <div className="flex flex-row justify-around ">
           <a href="" className="mr-10">
